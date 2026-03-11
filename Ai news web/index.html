@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai news | Daily Artificial Intelligence Updates</title>
+    <meta name="description" content="Stay updated with the latest daily Artificial Intelligence news, breakthroughs, and trends from around the world.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <span class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                Ai news
+            </a>
+            
+            <div class="search-container">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search AI topics..." aria-label="Search news">
+            </div>
+
+            <nav class="main-nav">
+                <a href="#" class="nav-link active">Latest</a>
+                <a href="#" class="nav-link">Trending</a>
+                <a href="#" class="btn btn-primary">Subscribe</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section" id="heroSection">
+            <!-- Hero content will be injected by JS -->
+            <div class="hero-skeleton pulse"></div>
+        </section>
+
+        <!-- Main Content Area -->
+        <div class="content-layout">
+            <!-- News Feed -->
+            <section class="news-feed">
+                <div class="section-header">
+                    <h2>Latest Stories</h2>
+                    <div class="sort-controls">
+                        <select id="sortSelect" aria-label="Sort news">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="news-grid" id="newsGrid">
+                    <!-- Skeletons for loading state -->
+                    <div class="card-skeleton pulse"></div>
+                    <div class="card-skeleton pulse"></div>
+                    <div class="card-skeleton pulse"></div>
+                    <div class="card-skeleton pulse"></div>
+                </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>Trending Topics</h3>
+                    <ul class="tag-list">
+                        <li><a href="#" class="tag">#LLMs</a></li>
+                        <li><a href="#" class="tag">#GenerativeAI</a></li>
+                        <li><a href="#" class="tag">#Robotics</a></li>
+                        <li><a href="#" class="tag">#AIEthics</a></li>
+                        <li><a href="#" class="tag">#OpenAI</a></li>
+                        <li><a href="#" class="tag">#MachineLearning</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget newsletter-widget">
+                    <h3>Daily AI Updates</h3>
+                    <p>Get the most important AI news delivered to your inbox every morning.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary full-width">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                     <span class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    Ai news
+                </div>
+                <p>Making Artificial Intelligence accessible to everyone through clear, daily reporting.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Categories</h4>
+                    <a href="#">Machine Learning</a>
+                    <a href="#">Robotics</a>
+                    <a href="#">Ethics</a>
+                    <a href="#">Startups</a>
+                </div>
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Ai news. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
